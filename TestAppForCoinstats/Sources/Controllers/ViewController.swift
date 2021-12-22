@@ -1,9 +1,3 @@
-//
-//  ViewController.swift
-//  TestAppForCoinstats
-//
-//  Created by Narek Ektubaryan on 22.12.21.
-//
 
 import UIKit
 
@@ -13,7 +7,5 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
-
-
 }
 
