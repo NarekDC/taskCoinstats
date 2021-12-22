@@ -1,5 +1,4 @@
 
-
 import Foundation
 
 class FeedListController {
@@ -36,7 +35,7 @@ class FeedListController {
                                                              image: AsyncImage(url: feed.coverPhotoURL),
                                                              category: feed.category)
                 photoCellViewModel.cellPressed = {
-                    print("Open a photo viewer!")
+                    self.viewModel.selectedFeed = feed
                 }
         
             vm = photoCellViewModel
@@ -90,3 +89,4 @@ class FeedListController {
         }
     }
 }
+

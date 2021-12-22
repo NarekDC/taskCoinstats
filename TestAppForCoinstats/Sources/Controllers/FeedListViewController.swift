@@ -20,7 +20,7 @@ class FeedListViewController: UIViewController {
         tableView.rowHeight = UITableView.automaticDimension
 
         view.addSubview(tableView)
-        NSLayoutConstraint.activate(tableView.edgeConstraints(top: 80, left: 0, bottom: 0, right: 0))
+        NSLayoutConstraint.activate(tableView.edgeConstraints(top: 120, left: 0, bottom: 0, right: 0))
 
         tableView.register(MemberCell.self, forCellReuseIdentifier: MemberCell.cellIdentifier())
         tableView.register(PhotoCell.self, forCellReuseIdentifier: PhotoCell.cellIdentifier())
@@ -118,6 +118,7 @@ extension FeedListViewController: UITableViewDelegate, UITableViewDataSource {
         let sectionViewModel = viewModel.sectionViewModels.value[indexPath.section]
         if let rowViewModel = sectionViewModel.rowViewModels[indexPath.row] as? ViewModelPressible {
             rowViewModel.cellPressed?()
+            performSegue(withIdentifier: "showDetails", sender: self)
         }
     }
 
@@ -125,5 +126,14 @@ extension FeedListViewController: UITableViewDelegate, UITableViewDataSource {
         let view = SectionHeaderView()
         _ = viewModel.sectionViewModels.value[section]
         return view
+    }
+}
+
+extension FeedListViewController {
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let vc = segue.destination as? TopStoryDetailViewController,
+            let topStory = viewModel.selectedFeed {
+            vc.selectedFeed = topStory
+        }
     }
 }

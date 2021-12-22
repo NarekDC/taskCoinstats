@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		87520D762773097200E8BA00 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87520D752773097200E8BA00 /* AppDelegate.swift */; };
-		87520D7A2773097200E8BA00 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87520D792773097200E8BA00 /* ViewController.swift */; };
 		87520D7F2773097500E8BA00 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 87520D7E2773097500E8BA00 /* Assets.xcassets */; };
 		87520D822773097500E8BA00 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87520D802773097500E8BA00 /* LaunchScreen.storyboard */; };
 		87520D8B27730FE100E8BA00 /* FeedListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87520D8A27730FE100E8BA00 /* FeedListViewController.swift */; };
@@ -33,12 +32,13 @@
 		87520DE4277326BA00E8BA00 /* DateDecodingStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87520DE3277326BA00E8BA00 /* DateDecodingStrategy.swift */; };
 		87520DE6277342A900E8BA00 /* FeedCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 87520DE5277342A900E8BA00 /* FeedCell.xib */; };
 		87520DE82773444800E8BA00 /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87520DE72773444700E8BA00 /* FeedCell.swift */; };
+		87520DEA27735D2C00E8BA00 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87520DE927735D2C00E8BA00 /* Main.storyboard */; };
+		87520DEC2773610200E8BA00 /* TopStoryDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87520DEB2773610200E8BA00 /* TopStoryDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		87520D722773097200E8BA00 /* TestAppForCoinstats.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestAppForCoinstats.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		87520D752773097200E8BA00 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		87520D792773097200E8BA00 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		87520D7E2773097500E8BA00 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		87520D812773097500E8BA00 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		87520D8A27730FE100E8BA00 /* FeedListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedListViewController.swift; sourceTree = "<group>"; };
@@ -64,6 +64,8 @@
 		87520DE3277326BA00E8BA00 /* DateDecodingStrategy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateDecodingStrategy.swift; sourceTree = "<group>"; };
 		87520DE5277342A900E8BA00 /* FeedCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FeedCell.xib; sourceTree = "<group>"; };
 		87520DE72773444700E8BA00 /* FeedCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
+		87520DE927735D2C00E8BA00 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		87520DEB2773610200E8BA00 /* TopStoryDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopStoryDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 				87520DD227731A5200E8BA00 /* Sources */,
 				87520D752773097200E8BA00 /* AppDelegate.swift */,
 				87520D7E2773097500E8BA00 /* Assets.xcassets */,
+				87520DE927735D2C00E8BA00 /* Main.storyboard */,
 				87520D802773097500E8BA00 /* LaunchScreen.storyboard */,
 				87520DC3277317FA00E8BA00 /* Info.plist */,
 			);
@@ -156,7 +159,7 @@
 		87520DD627731AFF00E8BA00 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				87520D792773097200E8BA00 /* ViewController.swift */,
+				87520DEB2773610200E8BA00 /* TopStoryDetailViewController.swift */,
 				87520D8A27730FE100E8BA00 /* FeedListViewController.swift */,
 				87520DC12773133700E8BA00 /* FeedListController.swift */,
 			);
@@ -284,6 +287,7 @@
 				87520DE6277342A900E8BA00 /* FeedCell.xib in Resources */,
 				87520D822773097500E8BA00 /* LaunchScreen.storyboard in Resources */,
 				87520D7F2773097500E8BA00 /* Assets.xcassets in Resources */,
+				87520DEA27735D2C00E8BA00 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,7 +303,6 @@
 				87520DC22773133700E8BA00 /* FeedListController.swift in Sources */,
 				87520DA6277312B300E8BA00 /* Feed.swift in Sources */,
 				87520DBB277312E100E8BA00 /* PhotoCellViewModel.swift in Sources */,
-				87520D7A2773097200E8BA00 /* ViewController.swift in Sources */,
 				87520D762773097200E8BA00 /* AppDelegate.swift in Sources */,
 				87520DB0277312C900E8BA00 /* SocialService.swift in Sources */,
 				87520D8B27730FE100E8BA00 /* FeedListViewController.swift in Sources */,
@@ -309,6 +312,7 @@
 				87520DAD277312BC00E8BA00 /* ImageDownloadHelper.swift in Sources */,
 				87520DB8277312DD00E8BA00 /* RowViewModel.swift in Sources */,
 				87520DB3277312D900E8BA00 /* MemberCell.swift in Sources */,
+				87520DEC2773610200E8BA00 /* TopStoryDetailViewController.swift in Sources */,
 				87520D92277310B600E8BA00 /* FeedListViewModel.swift in Sources */,
 				87520DE22773240B00E8BA00 /* UIImageViewExtension.swift in Sources */,
 				87520DBC277312E100E8BA00 /* PhotoCell.swift in Sources */,
@@ -463,6 +467,7 @@
 				INFOPLIST_FILE = TestAppForCoinstats/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UIRequiredDeviceCapabilities = armv7;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -495,6 +500,7 @@
 				INFOPLIST_FILE = TestAppForCoinstats/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UIRequiredDeviceCapabilities = armv7;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";

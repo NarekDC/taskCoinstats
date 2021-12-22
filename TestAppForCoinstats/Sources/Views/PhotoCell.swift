@@ -30,7 +30,7 @@ class PhotoCell: UITableViewCell, CellConfigurable {
         self.contentView.addSubview(label)
 
         label.textColor = UIColor.lightGray
-        label.font = UIFont.systemFont(ofSize: 8)
+        label.font = UIFont.systemFont(ofSize: 10)
         label.numberOfLines = 0
         return label
     }()
@@ -88,8 +88,11 @@ class PhotoCell: UITableViewCell, CellConfigurable {
 
     private func setupConstraints() {
         NSLayoutConstraint.activate([
+            categoryLabel.leftAnchor.constraint(equalTo: contentView.leftAnchor, constant: 10),
+            categoryLabel.rightAnchor.constraint(equalTo: contentView.rightAnchor, constant: -10),
+
             coverImageView.leftAnchor.constraint(equalTo: contentView.leftAnchor, constant: 10),
-            coverImageView.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 10),
+            coverImageView.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 30),
             coverImageView.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -10).withPriority(priority: .defaultLow),
             coverImageView.widthAnchor.constraint(equalToConstant: 120),
             coverImageView.heightAnchor.constraint(equalToConstant: 80),
@@ -101,12 +104,7 @@ class PhotoCell: UITableViewCell, CellConfigurable {
             descriptionLabel.topAnchor.constraint(equalTo: titleLabel.bottomAnchor, constant: 10),
             descriptionLabel.leftAnchor.constraint(equalTo: titleLabel.leftAnchor),
             descriptionLabel.rightAnchor.constraint(equalTo: contentView.rightAnchor, constant: -10),
-            descriptionLabel.bottomAnchor.constraint(lessThanOrEqualTo: contentView.bottomAnchor, constant: -10),
-            
-            categoryLabel.topAnchor.constraint(equalTo: descriptionLabel.bottomAnchor, constant: 10),
-            categoryLabel.leftAnchor.constraint(equalTo: descriptionLabel.rightAnchor, constant: 10),
-            categoryLabel.rightAnchor.constraint(equalTo: contentView.rightAnchor, constant: -10)
-            
+            descriptionLabel.bottomAnchor.constraint(lessThanOrEqualTo: contentView.bottomAnchor, constant: -10)
             ])
 
         titleLabel.accessibilityIdentifier = "titeLabel"

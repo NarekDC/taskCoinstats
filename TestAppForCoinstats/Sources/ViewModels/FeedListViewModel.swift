@@ -7,4 +7,6 @@ class FeedListViewModel {
     let isLoading = Observable<Bool>(value: false)
     let isTableViewHidden = Observable<Bool>(value: false)
     let sectionViewModels = Observable<[SectionViewModel]>(value: [])
+    
+    var selectedFeed: FeedInfoData?
 }
