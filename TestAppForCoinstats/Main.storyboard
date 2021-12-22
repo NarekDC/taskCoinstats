@@ -94,6 +94,7 @@
                                             <constraint firstItem="eQc-0S-uQh" firstAttribute="leading" secondItem="Lvl-cv-PA9" secondAttribute="leading" constant="10" id="Zfv-rR-CHa"/>
                                             <constraint firstAttribute="trailing" secondItem="b3p-Mb-QU2" secondAttribute="trailing" id="cqj-XM-2aU"/>
                                             <constraint firstAttribute="trailing" secondItem="a98-Ku-nYR" secondAttribute="trailing" constant="10" id="dg5-Pt-olP"/>
+                                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="eQc-0S-uQh" secondAttribute="bottom" priority="999" id="iOe-g1-H2t"/>
                                             <constraint firstItem="b3p-Mb-QU2" firstAttribute="leading" secondItem="Lvl-cv-PA9" secondAttribute="leading" id="qV1-bh-a32"/>
                                             <constraint firstItem="a98-Ku-nYR" firstAttribute="centerX" secondItem="eQc-0S-uQh" secondAttribute="centerX" id="tug-Hw-n4r"/>
                                         </constraints>
